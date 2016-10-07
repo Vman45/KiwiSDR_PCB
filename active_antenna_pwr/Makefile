@@ -22,3 +22,8 @@ dirty:
 	mkdir -p plot
 	(cd plot; zip kiwiSDR_$(PROJ).zip *.{gtl,gbl,gts,gbs,gto,gbo} *Edge_Cuts.gbr *.txt)
 	(cd plot; zip --test kiwiSDR_$(PROJ).zip)
+
+.PHONY: clean
+clean:
+	rm -f pn plot/$(PROJ).*.tar *.bak *-bak plot/*.zip
+	rm -rf *.dSYM

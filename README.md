@@ -1,4 +1,4 @@
-[updated 20-April-2016]
+[updated 8-October-2016]
 
 [![KiwiSDR](https://dl.dropboxusercontent.com/u/68809050/KiwiSDR/Seeed.sample.1.780px.jpg)](https://dl.dropboxusercontent.com/u/68809050/KiwiSDR/Seeed.sample.1.jpg)
 
@@ -15,7 +15,9 @@ Software-defined Radio (SDR) and GPS for the BeagleBone Black
 An add-on board ("cape") that turns your Beagle into a web-accessible shortwave receiver.
 
 This repository contains the KiCAD files (schematics, board layout), Gerbers, BOM and other files used to produce the KiwiSDR PCB.
-Also included here is the design for an active antenna and bias tee although they are still undergoing development.
+Also included here is the design for an active antenna and bias tee.
+
+**Note: the active antenna and bias tee schematics and PCBs here are still undergoing development and do not work properly. Do not fabricate the PCBs and expect them to work.**
 
 The KiwiSDR software is located in the repository [Beagle_SDR_GPS](https://github.com/jks-prv/Beagle_SDR_GPS/).
 
@@ -24,7 +26,8 @@ KiwiSDR had a successful [Kickstarter](https://www.kickstarter.com/projects/1575
 
 ### Details
 
-* Listen live: [New Zealand](http://kiwisdr.com:8073), [Canada](http://kiwisdr.ece.uvic.ca:8073), [Sweden](http://kiwisdr.sk3w.se:8073), all others on [SDR.hu](http://sdr.hu)
+* Listen live: [New Zealand](http://kiwisdr.com:8073), [Canada](http://kiwisdr.ece.uvic.ca:8073), [Sweden](http://kiwisdr.sk3w.se:8073), all others on [SDR.hu](http://sdr.hu/?top=kiwi)
+* [Quick Start information: installation, operation, FAQ](http://www.kiwisdr.com/quickstart/)
 * [Design review document](https://dl.dropboxusercontent.com/u/68809050/KiwiSDR/KiwiSDR.design.review.pdf)
 * [Project status & history](http://www.kiwisdr.com/KiwiSDR/)
 * [Schematic](http://www.kiwisdr.com/docs/KiwiSDR/kiwi.schematic.pdf), [Gerbers](http://www.kiwisdr.com/docs/KiwiSDR/kiwi.gerbers.tar), [Active antenna](http://www.kiwisdr.com/docs/KiwiSDR/ant.pdf), [BOM ODS](http://www.kiwisdr.com/docs/KiwiSDR/kiwi.bom.ods), [BOM XLS](http://www.kiwisdr.com/docs/KiwiSDR/kiwi.bom.xls)
@@ -33,7 +36,7 @@ KiwiSDR had a successful [Kickstarter](https://www.kickstarter.com/projects/1575
 This SDR is a bit different. It has a web interface that can be used by up to four separate listeners. Each one listening and tuning an independent frequency simultaneously. See the screenshots below.
 
 ### Components
-* SDR covering the 10 KHz to 30 MHz (VLF-HF) spectrum.
+* SDR covering the 10 kHz to 30 MHz (VLF-HF) spectrum.
 * Web interface based on [OpenWebRX](http://openwebrx.org/) from András Retzler, HA7ILM.
 * Integrated software-defined GPS receiver from Andrew Holme's [Homemade GPS Receiver](http://www.aholme.co.uk/GPS/Main.htm).
 * LTC 14-bit 65 MHz ADC.
@@ -53,9 +56,11 @@ This SDR is a bit different. It has a web interface that can be used by up to fo
 
 ### Status
 
-Give the live receiver a try at the link above. You'll need a recent version of a modern web browser that supports HTML5. The web interface works, with lots of problems, on iPad. But there is no mobile version of the interface yet.
+Give the live receivers a try at the links above. You'll need a recent version of a modern web browser that supports HTML5. The web interface works, with lots of problems, on iPad. But there is no mobile version of the interface yet.
 
-The files of a KiCAD PCB layout of the cape are available. This PCB has been fabricated in prototype quantities. Please email me any comments you have after reviewing the design document above (I need all the advice I can get). The active antenna and injector PCBs have been fabricated and are undergoing development.
+The files of a KiCAD PCB layout of the cape are available. This PCB has been fabricated in production quantities
+and shipped to over 350 customers.
+Please email me any comments you have after reviewing the design document above (I need all the advice I can get). The active antenna and injector PCBs have been fabricated and are undergoing development.
 
 ### Objectives
 

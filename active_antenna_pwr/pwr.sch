@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Saturday, February 20, 2016 01:56:00 PM
+EESchema Schematic File Version 2  date Saturday, April 23, 2016 01:15:39 PM
 LIBS:kiwi
 LIBS:pwr-cache
 EELAYER 27 0
@@ -7,7 +7,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "KiwiSDR - Active Antenna and Power Supply"
-Date "20 feb 2016"
+Date "23 apr 2016"
 Rev "1.1"
 Comp ""
 Comment1 "February 2016"
@@ -689,7 +689,7 @@ F 3 "~" H 4800 3650 60  0000 C CNN
 $EndComp
 Text Label 4150 2400 0    60   ~ 0
 VOUT2
-Text Label 2550 2400 0    60   ~ 0
+Text Label 2350 2400 0    60   ~ 0
 VOUT1
 Text Label 4850 3100 0    60   ~ 0
 VMULT
@@ -1400,4 +1400,31 @@ Wire Wire Line
 	15000 2400 14600 2400
 Wire Wire Line
 	12500 3000 15200 3000
+$Comp
+L CP1 C218
+U 1 1 571ACED5
+P 2700 2700
+F 0 "C218" H 2700 2800 40  0000 L CNN
+F 1 "330u/35 EL" H 2700 2600 40  0000 L CNN
+F 2 "kiwi-CAP_10x10" H 2700 2700 60  0001 C CNN
+F 3 "~" H 2700 2700 60  0000 C CNN
+	1    2700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2400 2700 2500
+Connection ~ 2700 2400
+$Comp
+L GND_INJ #GND014
+U 1 1 571AD17A
+P 2700 2950
+F 0 "#GND014" H 2700 2950 30  0001 C CNN
+F 1 "GND_INJ" H 2700 2880 30  0001 C CNN
+F 2 "~" H 2700 2950 60  0000 C CNN
+F 3 "~" H 2700 2950 60  0000 C CNN
+	1    2700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2900 2700 2950
 $EndSCHEMATC

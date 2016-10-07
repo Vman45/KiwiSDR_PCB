@@ -196,6 +196,7 @@ pn_t pn[] = {
 {SMT, "28R7",					"kiwi-SM0402",		"Panasonic",		"ERJ-2RKF28R7X", G, S_1P_100m_50V },
 {SMT, "66R5",					"kiwi-SM0402",		"Panasonic",		"ERJ-2RKF66R5X", G, S_1P_100m_50V },
 {SMT, "100R",					"kiwi-SM0402",		"Panasonic",		"ERJ-2RKF1000X", G, S_1P_100m_50V },
+{SMT, "1K5",					"kiwi-SM0402",		"Panasonic",		"ERJ-2RKF1501X", G, S_1P_100m_50V },
 {SMT, "5K6",					"kiwi-SM0402",		"Panasonic",		"ERJ-2RKF5601X", G, S_1P_100m_50V },
 {SMT, "6K65",					"kiwi-SM0402",		"Panasonic",		"ERJ-2RKF6651X", G, S_1P_100m_50V },
 {SMT, "10K",					"kiwi-SM0402",		"Panasonic",		"ERJ-2RKF1002X", G, S_1P_100m_50V },
